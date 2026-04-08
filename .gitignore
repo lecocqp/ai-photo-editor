@@ -1,0 +1,14 @@
+# Build output
+build/
+
+# Libraries (binaries)
+libs/
+
+# AI model files (large binaries)
+models/
+
+# Test/sample images
+images/
+
+# Runtime-generated ImGui layout
+imgui.ini
