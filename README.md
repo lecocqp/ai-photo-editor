@@ -1,15 +1,14 @@
 # AI Photo Editor
 
-An exploratory desktop photo editor built in C++ as an exercise in AI-assisted development using the [Claude](https://claude.ai) coding assistant. The goal was to prototype a non-trivial native application — from scratch — with Claude driving the implementation.
+ APE (AI Photo Editor) is a lightweight photo editor built in C++ with a focus on AI-powered photo enhancements. It supports basic image adjustments as well as advanced operations like upscaling and face restoration using ONNX Runtime with DirectML for GPU acceleration. 
 
-## About
+This project is being developed mainly for educational purposes to explore how AI image processing models can be integrated in C++ into a desktop application. This project also serves as a playground to see how far Claude can assist in code generation and project structuring for a non-trivial application.
 
-This project explores how far an AI coding assistant can take a real, multi-subsystem C++ application. Everything from the image pipeline and UI layout to the AI inference integration was written collaboratively with Claude Code.
 
 ## Features
 
-- **Image adjustments** — exposure, contrast, brightness, highlights, shadows, whites, blacks, gamma, saturation, vibrance, temperature, tint, hue shift, clarity, and sharpening
-- **AI-powered operations** (via ONNX Runtime + DirectML):
+- **Image adjustments:** exposure, contrast, brightness, highlights, shadows, whites, blacks, gamma, saturation, vibrance, temperature, tint, hue shift, clarity, and sharpening
+- **AI-processing operations** (via ONNX Runtime + DirectML):
   - Upscaling (Real-ESRGAN)
   - Face restoration (GFPGAN)
   - Denoise, sharpen, and auto-enhance
@@ -47,5 +46,5 @@ cmake --build build
 
 ## Notes
 
-- `models/` and `libs/` are excluded from the repo (large binaries). AI features require you to supply the ONNX Runtime and model files separately.
+- `models/` and `libs/` are excluded from the repo (large binaries). AI features require you to supply the ONNX Runtime and model files separately. See README.txt in models folder for details.
 - This is an exploratory/learning project, not production software.
